@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2017-02-20</Date>
+  <Beta>False</Beta>
+  <Category>Other:Misc</Category>
+  <Name>Poller</Name>
+  <Project></Project>
+  <Changes>
+  </Changes>
+  <Overview>
+    Overview
+  </Overview>
+  <Description>
+    Description
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/limetech/plex/</Registry>
+  <GitHub>https://github.com/limetech/dockerapp-plex</GitHub>
+  <Repository>limetech/plex</Repository>
+  <Support/>
+  <ExtraParams/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+  <!--
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    -->
+  </Data>
+  <WebUI>http://[IP]:[PORT:10666]/index.html</WebUI>
+  <Banner></Banner>
+  <Icon/>
+</Containers>
