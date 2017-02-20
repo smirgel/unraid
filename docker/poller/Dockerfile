@@ -1,9 +1,9 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && \
-    env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends -o Dpkg::Options::="--force-confold" ca-certificates curl jq && \
+    env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends -o Dpkg::Options::="--force-confold" ca-certificates curl jq gettext ncftp && \
     rm -rf /var/lib/apt/lists/*
 
-ADD poll.sh /
+ADD poll.sh testing.html.in /
 
 CMD ["/poll.sh"]
