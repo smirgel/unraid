@@ -14,7 +14,7 @@
     Description
   </Description>
   <Registry>https://registry.hub.docker.com/u/limetech/plex/</Registry>
-  <GitHub>https://github.com/limetech/dockerapp-plex</GitHub>
+  <GitHub>https://github.com/smirgel/unraid/tree/master/docker/poller</GitHub>
   <Repository>limetech/plex</Repository>
   <Support/>
   <ExtraParams/>
