@@ -19,6 +19,7 @@ while true; do
     echo "Upload html file"
     ncftpput -v -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST public_html/ testing.html
     echo "done"
+    prev_ext_ip=$ext_ip
   fi
   sleep 60
 done
