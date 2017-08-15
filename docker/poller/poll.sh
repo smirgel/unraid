@@ -43,7 +43,7 @@ while true; do
   else
     echo "$(date): curl failed"
   fi
-  sleep 60
+  sleep 300
 done
 
 ) 2>&1 | ts '[%Y-%m-%d %H:%M:%S]'
