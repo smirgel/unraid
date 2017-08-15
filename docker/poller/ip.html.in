@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>IP</title>
+</head>
+<body>
+IP ${EXTERNAL_IP}
+</body>
+</html>

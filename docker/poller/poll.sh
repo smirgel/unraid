@@ -23,8 +23,9 @@ while true; do
       echo "IP changed: $ext_ip"
       echo "Create html file"
       env EXTERNAL_IP=$ext_ip envsubst < testing.html.in > testing.html
+      env EXTERNAL_IP=$ext_ip envsubst < ip.html.in > ip.html
       echo "Upload html file"
-      ncftpput -v -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST public_html/ testing.html
+      ncftpput -v -u $FTP_USER -p $FTP_PASSWORD $FTP_HOST public_html/ testing.html ip.html
       echo "done"
       prev_ext_ip=$ext_ip
     fi
