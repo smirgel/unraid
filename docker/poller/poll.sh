@@ -26,6 +26,7 @@ while true; do
       ncftpget -V -u "${FTP_USER}" -p "${FTP_PASSWORD}" "${FTP_HOST}" . public_html/ips.txt
       echo "$(date): ${ext_ip}" >> ips.txt
       tail -5 ips.txt
+      echo "${ext_ip}" >> ip.txt
 
       echo ''
       echo 'Create html file(s)'
@@ -34,7 +35,7 @@ while true; do
 
       echo ''
       echo 'Upload files'
-      ncftpput -V -u "${FTP_USER}" -p "${FTP_PASSWORD}" "${FTP_HOST}" public_html/ testing.html ip.html ips.txt
+      ncftpput -V -u "${FTP_USER}" -p "${FTP_PASSWORD}" "${FTP_HOST}" public_html/ testing.html ip.html ips.txt ip.txt
 
       echo ''
       echo 'Done'
